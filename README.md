@@ -99,10 +99,9 @@ public String getNip() {
 }
 ```
 
-7. **Encapsulation** adalah konsep menyembunyikan data dengan membuat atribut pada class Pegawai menjadi protected agar class anak,
-    class lain di dalam package yang sama, dan method pada class Pegawai bisa mengaksesnya. Pada kode class ini, atribut `nama`, `nip` dan `gol`
-   yang dienkapsulasi. Sedangkan class PegawaiDetail menjadi private dan hanya bisa diakses melalui method. Pada kode class ini, atribut `gaji` dan `jamKerja`
-   dienkapsulasi dan hanya bisa diakses melalui method getter dan setter pada class PegawaiDetail. 
+7. **Encapsulation** adalah konsep menyembunyikan data dengan membuat atribut pada class Pegawai dan class PegawaiDetail menjadi protected agar class anak,
+    class lain di dalam package yang sama, dan method pada class Pegawai bisa mengaksesnya. Pada kode class Pegawai, atribut `nama`, `nip` dan `gol`
+   yang dienkapsulasi. Sedangkan pada class PegawaiDetail atribut `gaji` dan `jamKerja` yang dienkapsulasi.
 
 ```bash
 //class Pegawai
