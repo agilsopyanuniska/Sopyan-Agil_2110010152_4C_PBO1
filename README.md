@@ -37,10 +37,14 @@ public class PegawaiBeraksi {
 pegawai[i] = new PegawaiDetail(nama,nip,gol);
 ```
 
-3. **Atribut** adalah variabel yang ada dalam class. Pada kode ini, `nama`, `nip` dan `gol` adalah contoh atribut.
+3. **Atribut** adalah variabel yang ada dalam class. Pada kode ini, `nama`, `nip` dan `gol` adalah contoh atribut pada class Pegawai dengan `jamKerja`
+   dan `gaji` adalah contoh atribut pada class PegawaiDetail. 
 
 ```bash
-String nama,nip,gol; 
+String nama,nip,gol;
+
+double gaji; 
+int jamKerja;
 ```
 
 4. **Constructor** adalah method yang pertama kali dijalankan pada saat pembuatan object. Pada kode ini, constructor ada di dalam class `Pegawai` dan
@@ -121,9 +125,9 @@ public class PegawaiDetail extends Pegawai {
 ```
 
 9. **Polymorphism** adalah konsep di mana sebuah nama dapat digunakan untuk merujuk ke beberapa tipe atau bentuk objek berbeda. Ini memungkinkan metode-metode
-    dengan nama yang sama untuk berperilaku berbeda tergantung pada tipe objek yang mereka manipulasi, polymorphism bisa berbentuk Overloading ataupun Overriding.
-    Pada kode ini, method `Pegawai` di `Pegawai` merupakan overloading method `Pegawai(String nama, String nip, String gol)` dan `hasil` di `PegawaiDetail` merupakan
-    override dari method `hasil` di `Pegawai`.
+    dengan nama yang sama untuk berperilaku berbeda tergantung pada tipe objek yang mereka manipulasi, polymorphism bisa berbentuk Overloading ataupun 
+    Overriding.Pada kode ini, method `Pegawai` di `Pegawai` merupakan overloading method `Pegawai(String nama, String nip, String gol)` dan `hasil` di 
+    `PegawaiDetail` merupakan override dari method `hasil` di `Pegawai`.
 
 ```bash
 public Pegawai(){
